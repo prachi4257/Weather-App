@@ -1,0 +1,96 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar full width */
+.navbar {
+  width: 100vw;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.navbar h2 {
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  color: yellow;
+}
+
+/* Container → card ko center karne ke liye */
+.container {
+  height: calc(100vh - 70px); /* 70px = approx navbar ki height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card same width sab pages ke liye */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  width: 350px;        /* Login, Signup, Weather ke liye same width */
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+.weather-info{
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+}
